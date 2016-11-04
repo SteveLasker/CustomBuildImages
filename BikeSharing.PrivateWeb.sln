@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.25902.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeSharing.Private.Web.Site", "src\BikeSharing.Private.Web.Site\BikeSharing.Private.Web.Site.csproj", "{8823508D-E9BB-4234-AF68-0B229934B7EB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeSharing.Services.Feedback.Api", "src\BikeSharing.Services.Feedback.Api\BikeSharing.Services.Feedback.Api.csproj", "{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D3E53412-2F76-41BC-9A67-9A2BDD91FBF4}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.ci.build.yml = docker-compose.ci.build.yml
+		docker-compose.override.yml = docker-compose.override.yml
+		docker-compose.vs.debug.yml = docker-compose.vs.debug.yml
+		docker-compose.vs.release.yml = docker-compose.vs.release.yml
+		docker-compose.yml = docker-compose.yml
+		ToDo.txt = ToDo.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{EBB3F6B2-65CB-48E8-9173-8B41224FD12F}"
+	ProjectSection(SolutionItems) = preProject
+		docker\Dockerfile = docker\Dockerfile
+		docker\nightly.project.json = docker\nightly.project.json
+		docker\packagescache.project.json = docker\packagescache.project.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Debug|x64.Build.0 = Debug|Any CPU
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Release|x64.ActiveCfg = Debug|Any CPU
+		{8823508D-E9BB-4234-AF68-0B229934B7EB}.Release|x64.Build.0 = Debug|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Debug|x64.Build.0 = Debug|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Release|x64.ActiveCfg = Release|Any CPU
+		{00CDF431-A1C7-4DD9-AF1D-98BB97B8416D}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EBB3F6B2-65CB-48E8-9173-8B41224FD12F} = {D3E53412-2F76-41BC-9A67-9A2BDD91FBF4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  web:
+    image: web
+    build:
+      context: ./src/BikeSharing.Private.Web.Site
+      dockerfile: Dockerfile
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+
+  feedbackapi:
+    image: feedbackapi
+    build:
+      context: ./src/BikeSharing.Services.Feedback.Api
+      dockerfile: Dockerfile
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+
+  ridesapi:
+    image: bikesharing-exp.azurecr.io/ridesapi
+    environment:
+      - port=80
+    ports:
+      - "80"

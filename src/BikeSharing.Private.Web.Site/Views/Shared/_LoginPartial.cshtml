@@ -1,0 +1,29 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using BikeSharing.Private.Web.Site.Models
+
+
+<li class="nav-item nav-user-block">
+    <div class="nav-item is-separated hidden-md-down">
+        <div class="nav-item nav-status-info">
+            NY City
+        </div>
+        <div class="nav-item nav-status-info">
+            @DateTime.Now.ToString("MMM dd, yyyy")
+
+        </div>
+    </div>
+    @*@if (SignInManager.IsSignedIn(User))
+    {
+        <div class="nav-item nav-user-info hidden-sm-down">
+            @{ var user = await UserManager.GetUserAsync(User); }
+            <span class="nav-link">@user.Name</span>
+        </div>
+        <div class="nav-item nav-avatar hidden-xs-down" style="background-image: url(@user.ProfileImage)">
+        </div>
+        <div class="nav-item nav-user-info">
+            <a class="nav-link" href="/Account/Logout">
+                <span class="icon-switch"></span>
+            </a>
+        </div>
+    }*@
+</li>

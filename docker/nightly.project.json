@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "Microsoft.Net.Sdk": "1.0.0-alpha-20161029-1",
+    "Microsoft.NETCore.App": "1.1.0"
+  },
+  "frameworks": {
+    "netcoreapp1.0": {}
+  },
+  "runtimes": {
+    "debian.8-x64": {}
+  }
+}
