@@ -49,7 +49,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # variables
-ENV DOTNET_SDK_VERSION 1.0.0-preview3-003933
+ENV DOTNET_SDK_VERSION 1.0.0-preview3-004050
 ENV DOTNET_SHAREDFX_VERSION 1.1.0
 ENV ASPNETCORE_URLS http://+:80
 ENV DOTNET_HOSTING_OPTIMIZATION_CACHE /packagescache
@@ -81,7 +81,7 @@ RUN curl -o /tmp/packagescache.tar.gz \
     dotnet nuget restore /tmp/warmup/nightly.project.json \
         --source https://dotnet.myget.org/F/dotnet-core/api/v3/index.json && \
     rm -rf /tmp/warmup && \
-	find ~/.nuget -name "*.nupkg" -type f -delete 
+	find ~/.nuget -name "*.nupkg" -type f -delete
 
 
 WORKDIR /
