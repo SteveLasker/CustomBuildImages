@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
       args:
         source: ${DOCKER_BUILD_SOURCE}
+    environment:
+      - ApiSettings:RidesApiUrl=http://http://ridesapi/api/rides
 
   feedbackapi:
     image: feedbackapi
@@ -16,6 +18,7 @@ services:
       dockerfile: Dockerfile
       args:
         source: ${DOCKER_BUILD_SOURCE}
+    environment:  
 
   ridesapi:
     image: bikesharing-exp.azurecr.io/ridesapi
