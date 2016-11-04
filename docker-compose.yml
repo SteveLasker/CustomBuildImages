@@ -19,6 +19,7 @@ services:
       args:
         source: ${DOCKER_BUILD_SOURCE}
     environment:  
+      - apis:rides:url=http://ridesapi
 
   ridesapi:
     image: bikesharing-exp.azurecr.io/ridesapi

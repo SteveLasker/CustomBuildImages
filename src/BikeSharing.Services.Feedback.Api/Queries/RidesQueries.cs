@@ -20,7 +20,7 @@ namespace BikeSharing.Services.Feedback.Api.Queries
         public RidesQueries(IConfiguration config)
         {
             _url = config["apis:rides:url"];
-        }
+       }
 
         public async Task<StationResponse> GetStationAsync(int id)
         {
