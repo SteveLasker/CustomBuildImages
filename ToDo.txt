@@ -1,9 +1,0 @@
-Cleanup the data in the database
-	Possibly move the database to run locally in local db - but how to configure that without running in a container - or, should we use SQL on Linux?
-
-Move URLs to environment variables instanced in the docker-compose.yml file
-Move urls flattened environment format
-Find a clean debugger/demo flow from the website, through the Feedback API to the Rides API
-
-Fix ci.build content to build the images in the container with the right CLI version
-
