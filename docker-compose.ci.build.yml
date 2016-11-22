@@ -3,7 +3,7 @@ version: '2'
 services:
   ci-build:
     # using the nightly image from dockerhub
-    image: microsoft/aspnetcore-build-nightly:1.1.0-preview1-sdk-003933
+    # image: microsoft/aspnetcore-build-nightly:1.1.0-preview1-sdk-003933
     # if that's failing, use a custom build where you can specify the various components
     # using custom builds
     #image: microsoft/aspnetcore-build:1.1.0-msbuild
@@ -11,5 +11,4 @@ services:
     volumes:
       - .:/src
     working_dir: /src
-    # adding /p:SkipInvalidConfigurations=true until we get an updated SDK image
-    command: /bin/bash -c "dotnet restore /p:SkipInvalidConfigurations=true && dotnet publish -c Release -o ./bin/Release/PublishOutput"
+    command: /bin/bash -c "dotnet restore && dotnet publish -c Release -o ./bin/Release/PublishOutput"
